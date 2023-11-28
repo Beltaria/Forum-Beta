@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil • Beltaria{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/forum.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('javascript/theme.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="header-first">
+            <img src="{{ asset('images/favicon.png') }}" alt="Logo">
+            <a href="{{ path('app_welcome') }}">Beltaria</a>
+        </div>
+        <div class="header-second">
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="https://github.com/BluedyRimuru" target="_blank">Github</a>
+            <a id="themeToggle">
+                <img src="{{ asset('images/icons/light_theme.png') }}" alt="theme circle">
+            </a>
+        </div>
+    </header>
+    <section class="section-forum">
+        <div class="forum-row">
+            <div class="column-1">
+                <section class="section-posts">
+                    <div class="forum-parent">
+                        <h4>Informations utiles</h4>
+                    </div>
+                    <div class="forum-child">
+                        <div class="forum-child-item">
+                            <div class="post-part-1">
+                                <img src="{{ asset('./database/images/icons/chat_icon.png') }}" alt="icon">
+                                <p class="post-title">Les enchantements !</p>
+                            </div>
+                            <div class="post-part-2">
+
+                            </div>
+                            <div class="post-part-3">
+
+                            </div>
+                        </div>
+                        <div class="forum-child-item">
+                            <div class="post-part-1">
+                                <img src="{{ asset('./database/images/icons/chat_icon.png') }}" alt="icon">
+                                <p class="post-title">Recrutement</p>
+                            </div>
+                        </div>
+                        <div class="forum-child-item">
+                            <div class="post-part-1">
+                                <img src="{{ asset('./database/images/icons/chat_icon.png') }}" alt="icon">
+                                <p class="post-title">Les enchantements !</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-posts">
+                    <div class="forum-parent">
+                        <h4>Candidatures</h4>
+                    </div>
+                    <div class="forum-child">
+                        <div class="forum-child-item">
+                            <div class="post-part-1">
+                                <img src="{{ asset('./database/images/icons/chat_icon.png') }}" alt="icon">
+                                <p class="post-title">Les enchantements !</p>
+                            </div>
+                            <div class="post-part-2">
+
+                            </div>
+                            <div class="post-part-3">
+
+                            </div>
+                        </div>
+                        <div class="forum-child-item">
+                            <div class="post-part-1">
+                                <img src="{{ asset('./database/images/icons/chat_icon.png') }}" alt="icon">
+                                <p class="post-title">Les enchantements !</p>
+                            </div>
+                        </div>
+                        <div class="forum-child-item">
+                            <div class="post-part-1">
+                                <img src="{{ asset('./database/images/icons/chat_icon.png') }}" alt="icon">
+                                <p class="post-title">Les enchantements !</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="column-2">
+                <section class="section-posts">
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+{% endblock %}
