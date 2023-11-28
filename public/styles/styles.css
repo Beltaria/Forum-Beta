@@ -1,0 +1,34 @@
+:root {
+    /* Ajout des couleurs pour thème clair */
+    --main-bg-color: #1D1D3E;
+
+    --categorie-bg-color: #2A2F5B;
+    --info-bg-color: #091634;
+
+    --test-color: white;
+
+    --fixed-bg-image: url('../images/background/prominence_nether_1.png');
+
+    --gradiant: linear-gradient(0deg,var(--color-3) 0%,var(--color-3) 0%,var(--color-3) 0%,var(--color-5) 10%),var(--fixed-bg-image);
+
+    --color-1: #252C4B;
+    --color-2: #2A2F5B;
+    --color-3: #1D1D3E;
+    --color-4: #091634;
+    --color-5: rgba(9,22,52, 0.85);
+}
+
+body.dark {
+    /* Changement des couleurs pour thème sombre */
+    --categorie-bg-color: #e1dada;
+    --info-bg-color: red;
+    --test-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}

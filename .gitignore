@@ -20,3 +20,5 @@
 ###< symfony/phpunit-bridge ###
 .idea/**
 .env
+/compose.yaml
+/compose.override.yaml

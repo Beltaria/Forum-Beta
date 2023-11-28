@@ -1,0 +1,134 @@
+body {
+    background: var(--gradiant);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--categorie-bg-color);
+    padding: 20px 60px;
+    box-shadow: 0 16px 18px -20px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header div img {
+    width: 100px;
+}
+
+header a {
+    color: white;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.header-second a {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header a img {
+    width: 30px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.header-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-second {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: var(--categorie-bg-color);
+    min-height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.section-forum {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.forum-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 50px;
+}
+
+.forum-row > * {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.column-1 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.column-2 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.section-posts {
+    width: 100%;
+    min-height: 80px;
+    background-color: var(--info-bg-color);
+    border-radius: 15px !important;
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+}
+
+.forum-parent {
+    background-color: var(--categorie-bg-color);
+    border-radius: 15px !important;
+    color: white;
+    padding: 15px 20px;
+}
+
+.forum-child-item {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.post-part-1 {
+    flex: 1;
+    align-items: center !important;
+    display: flex;
+}
+
+.post-part-2 {
+    display: flex!important;
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+}
+
+.post-part-3 {
+    display: flex!important;
+}
+
+.post-part-1 img {
+    color: white;
+    width: 40px;
+}
+
+.post-part-1 p {
+    color: white;
+    padding-left: 20px;
+}
